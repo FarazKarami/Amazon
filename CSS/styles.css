@@ -1,0 +1,1014 @@
+@font-face {
+    font-family: "Amazon Ember";
+    src: url(../Font/Amazon-Ember-Medium.ttf);
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Amazon Ember",Arial, sans-serif;
+}
+#header{
+    width: 100%;
+}
+#header .mainHeader{
+    background-color: #131921;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+@media screen and (max-width: 800px){
+    .desktop{
+        display: none;
+    }
+    #header .mainHeader{
+        width: 100%;
+        background-color: #222f3e;
+        height: 14.2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    #header .mainHeader .topHeader{
+        display: flex;
+    }
+    #header .mainHeader .topHeader .navLeft{
+        display: flex;
+        flex-direction: row;
+        width: 12.8rem;
+        height: 4.7rem;
+    }
+    #header .mainHeader .topHeader .navLeft .logo{
+        display: flex;
+        width: 12.8rem;
+        height: 4.7rem;
+    }
+    #header .mainHeader .topHeader .navLeft .logo .amazonLogoHeader{
+        margin-top: -1rem;
+    }
+    #header .mainHeader .topHeader .navLeft .logo .mobileHeaderMenu{
+        width:2.5rem;
+        height: 2.4rem;
+        padding: 1.4rem;
+    }
+    #header .mainHeader .topHeader .navMid{
+        width: calc(100% - 28.2rem);
+    }
+    #header .mainHeader .topHeader .navRight{
+        display: flex;
+        flex-direction: row;
+        width: 15.4rem;
+        height: 4.7rem;
+    }
+    #header .mainHeader .topHeader .navRight .signin{
+        width: 5.3rem;
+        height: 4.8rem;
+        padding-top: 1.8rem;
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
+    #header .mainHeader .topHeader .navRight .signinperson{
+        padding: 0.9rem 0 1.2rem 0.4rem;
+    }
+    #header .mainHeader .topHeader .navRight .cart{
+        padding: 0.8rem 1.8rem 1.1rem 0.7rem;
+    }
+    #header .mainHeader .searchbox{
+        width: 100%;
+        height: 5rem;
+    }
+    #header .mainHeader .searchbox .navSearch{
+        padding: 0.2rem 1rem 0.5rem 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+    #header .mainHeader .searchbox .navSearch input{
+        width: 90%;
+        height: 4.4rem;
+        padding: 0 9.5rem 0 1rem;
+        border: none;
+        border-radius: 8px 0 0 8px;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    #header .mainHeader .searchbox .navSearch button{
+        border: none;
+        width: 5rem;
+        height: 4.4rem;
+        border-radius: 0 8px 8px 0;
+        background-color: #febd68;
+        margin-right: 1rem;
+    }
+    #header .mainHeader .searchbox .navSearch button svg{
+        stroke: #222f3e;
+    }
+    #header .mainHeader .navBar .headerNav .headerNavList{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        list-style: none;
+        font-size: 1.4rem;
+        font-weight: 400;
+        padding: 0;
+        padding-top: 1.2rem;
+        margin: 0;
+    }
+    #header .mainHeader .navBar .headerNav .headerNavList li{
+        margin: 0 0 2rem 1.5rem;
+    }
+    #header .location{
+        width: 100%;
+        height: 4.4rem;
+        background-color: #364759;
+        color: #ffffff;
+        display: flex;
+        flex-direction: row;
+    }
+    #header .location .locationIcon{
+        padding: 1.2rem 0 1.2rem 1rem;
+        margin: 0 0.5rem 0 0;
+    }
+    #header .location .locationText{
+        padding: 1.2rem 0 1.2rem 0;
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+}
+@media screen and (min-width:801px){
+    .mobile{
+        display: none;
+    }
+    .mainHeader{
+        height: 6rem;
+    }
+    .navLeft{
+        display: flex;
+        flex-direction: row;
+        width: 24.5rem;
+        height: 6rem;
+    }
+    .logo{
+        width: 11.3rem;
+        height: 5.6rem;
+        padding-top: 0.4rem;
+        margin: 0;
+    }
+    .logo a{
+        width: 9.9rem;
+        height: 4.9rem;
+        padding: 0.1rem 0.8rem 0 0.6rem;
+        margin: 0.1rem;
+    }
+    .logo a img{
+        width: 100%;
+    }
+    .location{
+        width: 11.9rem;
+        display: flex;
+        flex-direction: row;
+        padding: 0 0.9rem;
+        margin: 0.5rem 0.2rem 0.5rem 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .locationIcon{
+        width: 1.5rem;
+        height: 1.8rem;
+
+    }
+    .locationText{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.3rem;
+    }
+    .deliver{
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: rgb(204, 204, 204);
+    }
+    .country{
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+    .searchbox{
+        width: 81.15rem;
+        height: 6rem;
+    }
+    .navSearch{
+        display: flex;
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 0.4rem 1rem 0.3rem;
+        margin: 0 1rem;
+    }
+    .navSearch select{
+        width: 5.2rem;
+        height: 4rem;
+        text-align: center;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        font-size: 1.4rem;
+        font-weight: 400;
+        background-color: #e6e6e6;
+        color: #656565;
+    }
+    .navSearch input{
+        width: 88%;
+        height: 3.8rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: rgb(17, 17, 17);
+        border: none;
+        border-radius: 0;
+    }
+    .navSearch button{
+        width: 4.5rem;
+        height: 4rem;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        background-color: #febd68;
+    }
+    .navSearch button svg{
+        stroke: #131921;
+    }
+    .navRight{
+        display: flex;
+        flex-direction: row;
+        width: 38.4rem;
+        height: 6rem;
+        padding: 0.3rem 0 0 0;
+        margin: 0.2rem 0 0 0;
+    }
+    .language{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 5.54rem;
+        height: 4.5;
+        padding: 0 0.9rem 0.5rem 0.9rem;
+        margin: 1.4rem 0 0 0.1rem;
+    }
+    .languageIcon{
+        width: 2.4rem;
+        height: 1.8rem;
+    }
+    .languageIcon img{
+        width: 100%;
+    }
+    .languageText{
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-wrap: nowrap;
+    }
+    .signin{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0.9rem 1rem 0.9rem;
+        margin: 0 0 0 0.2rem;
+    }
+    .hello{
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: 0.9rem 0 0 0;
+    }
+    .accounts{
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-wrap: nowrap;
+    }
+    .returnsandorders{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0.9rem 1rem 0.9rem;
+        margin:0 0 0 0.2rem;
+    }
+    .returns{
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: 0.9rem 0 0 0;
+    }
+    .orders{
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-wrap: nowrap;
+    }
+    .cart{
+        width: 6.6rem;
+        height: 3.9rem;
+        padding: 0 0 1.1rem 0.9rem;
+        margin: 0 0 0 0.2rem;
+    }
+    .headerNav{
+        background-color: #222f3e;
+        color: #ffffff;
+        width: 100%;
+        height: 3.9rem;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.4rem;
+        font-weight: 400;
+
+    }
+    .navbarList{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        padding: 0 0 0 1.1rem;;
+        margin: 0;
+    }
+    .navbarList .all{
+        display: flex;
+        font-weight: 700;
+        align-items: center;
+        padding: 0.8rem 0.9rem;
+    }
+    .navbarList li{
+        padding: 0.8rem 0.9rem;
+        margin: 0.5rem 0 0.6rem 0;
+    }
+}
+@media screen and (min-width:1024px){
+    .logo{
+        margin-left: 1.1rem;
+    }
+    .cart{
+        padding: 0 0.9rem 1.1rem 0.9rem;
+        margin: 0 1.1rem 0 0.2rem;
+    }
+}
+#main{
+    width: 100%;  
+}
+@media screen and (max-width: 800px){
+    .desktop{
+        display: none;
+    }
+    #main{
+        background: url(../Pictures/backgroundMobile.jpg);
+        background-color: #e3e6e6;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+    #main .boxline1{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-top: 65%;
+    }
+    #main  .boxline1 .box{
+        width: 33%;
+        border-radius: 4px;
+        margin: 0 0.8rem 0 0;
+        background-color: #fff;
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    #main  .boxline1 .box img{
+        width: 100%;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(15,17,17,.15);
+    }
+    #main .signin{
+        background-color: #ffffff;
+        width: 100%;
+        margin: 0.2rem 0;
+    }
+    #main .signin .signincontainer{
+        padding: 1.2rem 1.5rem;
+    }
+    #main .signin .signincontainer .signinheader{
+        padding: 0 0 0.8rem 0;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1.25;
+        text-wrap: nowrap;
+    }
+    #main .signin .signincontainer .signinheader h3{
+        margin: 0;
+    }
+    #main .signin .signincontainer .signinbutton{
+        background-color: #ffd712;
+        text-align: center;
+        padding: 1.2rem 1.6rem 1.2rem 1.7rem;
+        font-size: 1.5rem;
+        border-radius: 0.8rem;
+        box-shadow: 0 0.2rem 0.5rem 0 rgba(213,217,217,.5);
+    }
+    #main .signin .signincontainer  button{
+        background-color: #ffd712;
+        border: none;
+        border-radius: 0;
+        outline: none;
+    }
+    #main .signin .signincontainer .signinfooter{
+        padding: 1.3rem 0 0 0;
+        font-size: 1.5rem;
+    }
+    #main .signin .signincontainer .signinfooter a{
+        color: #007185;
+        text-decoration: none;
+    }
+    #main .signin .signincontainer .signinfooter a:hover{
+        text-decoration: underline;
+    }
+    #main .box2x2{
+        width: 100%;
+        background-color: #ffffff;
+        padding: 1.2rem 1.5rem;
+        margin: 0.2rem 0;
+        box-sizing: border-box;
+    }
+    #main .box2x2 .box2x2header{
+        margin: 0 0 0.8rem 0;
+    }
+    #main .box2x2 .box2x2header h3{
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1.25;
+    }
+    #main .box2x2 .box2x2gridcontainer{
+        width: 100%;
+        display: grid;
+        grid-template: repeat(2, 50%) / repeat(2, 50%);
+        gap: 8px;
+        justify-items: center;
+        align-items: center;
+    }
+    #main .box2x2 .box2x2gridcontainer .grid2x2 div img{
+        width: 100%;
+    }
+    #main .box2x2 .box2x2gridcontainer .grid2x2 div span{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    #main .box2x2 .box2x2footer{
+        padding: 1.3rem 0 0 0;
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    #main .box2x2 .box2x2footer a{
+        text-decoration: none;
+        color: #007185;
+    }
+    #main .box2x2 .box2x2footer a:hover{
+        text-decoration: underline;
+    }
+    #main .billboardcard{
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    #main .billboardcard img{
+        width: 100%;
+    }
+    #main .box3x3{
+        width: 100%;
+        background-color: #ffffff;
+        padding: 1.2rem 1.5rem;
+        margin: 0.2rem 0;
+        box-sizing: border-box;
+    }
+    #main .box3x3 .box3x3header{
+        margin: 0 0 0.8rem 0;
+    }
+    #main .box3x3 .box3x3header h3{
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1.25;
+    }
+    #main .box3x3 .box3x3gridcontainer{
+        width: 100%;
+        display: grid;
+        grid-template: repeat(3, 33%) / repeat(3, 33%);
+        gap: 8px;
+        justify-items: center;
+        align-items: center;
+    }
+    #main .box3x3 .box3x3gridcontainer .grid3x3 div img{
+        width: 100%;
+    }
+    #main .box3x3 .box3x3footer{
+        padding: 1.3rem 0 0 0;
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    #main .box3x3 .box3x3footer a{
+        text-decoration: none;
+        color: #007185;
+    }
+    #main .box3x3 .box3x3footer a:hover{
+        text-decoration: underline;
+    }
+}
+@media screen and (min-width:801px){
+    .mobile{
+        display: none;
+    }
+    #main{
+        background: url(../Pictures/backgroundDesktop.jpg);
+        background-color: #f7f8f8;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    #main .boxcontainer{
+        display: flex;
+        flex-direction: row;
+        padding: 0 1rem;
+    }
+    #main .firstboxcontainer{
+        padding-top: 20%;
+    }
+    #main .boxcontainer .gridbox{
+        width: 33%;
+        background-color: #ffffff;
+        padding: 2rem 1rem 1.5rem 1rem;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    #main .boxcontainer .gridbox .boxheader{
+        padding: 0 20px;
+        margin: 0 0 10px 0;
+    }
+    #main .boxcontainer .gridbox .boxheader h2{
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 27.3px;
+    }
+    #main .boxcontainer .gridbox .boxcontainer{
+        padding: 0 20px;
+        margin: 0 0 44px 0;
+        display: grid;
+        grid-template: repeat(2, 50%) / repeat(2, 50%);
+        gap: 15px;
+        justify-items: center;
+        align-items: center;
+    }
+    #main .boxcontainer .gridbox .boxcontainer .grid2x2 div img{
+        width: 100%;
+    }
+    #main .boxcontainer .gridbox .boxcontainer .grid2x2 div span{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    #main .boxcontainer .gridbox .boxfooter{
+        padding: 0 20px;
+        margin: 0 0 20px 0;
+        font-size: 13px;
+        line-height: 19px;
+    }
+    #main .boxcontainer .gridbox .boxfooter a{
+        text-decoration: none;
+        color: #007185;
+    }
+    #main .boxcontainer .gridbox .boxfooter a:hover{
+        text-decoration: underline;
+        color: #c7511f;
+    }
+    #main .boxcontainer .box{
+        width: 33%;
+        background-color: #ffffff;
+        padding: 2rem 1rem 1.5rem 1rem;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    #main .boxcontainer .box .boxheader{
+        padding: 0 20px;
+        margin: 0 0 10px 0;
+    }
+    #main .boxcontainer .box .boxheader h2{
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 27.3px;
+    }
+    #main .boxcontainer .box .boxcontainer{
+        padding: 0 20px;
+        margin: 0 0 44px 0;
+    }
+    #main .boxcontainer .box .boxcontainer div img{
+        width: 100%;
+    }
+    #main .boxcontainer .box .boxfooter{
+        padding: 0 20px;
+        margin: 0 0 20px 0;
+        font-size: 13px;
+        line-height: 19px;
+    }
+    #main .boxcontainer .box .boxfooter a{
+        text-decoration: none;
+        color: #007185;
+    }
+    #main .boxcontainer .box .boxfooter a:hover{
+        color: #c7511f;
+    }
+    #main .boxrow{
+        width: 100%;
+        padding: 10px 20px;
+        background-color: #ffffff;
+        box-sizing: border-box;
+    }
+    #main .boxrow .boxrowheader{
+        margin: 10px 0 0 0;
+        padding: 0;
+    }
+    #main .boxrow .boxrowheader h2{
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    #main .boxrow .boxrowcontainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 0 0 14px 0;
+    }
+    #main .boxrow .boxrowcontainer div{
+        width: calc(100% / 7);
+        margin: 0 10px 0 0;
+    }
+    #main .boxrow .boxrowcontainer div img{
+        width: 100%;
+        height: 200px;
+    }
+    #main .signin{
+        margin: 2px 0 10px 0;
+        text-align: center;
+        background-color: #ffffff;
+    }
+    #main .signin .signinheader{
+        font-size: 13px;
+        padding: 35px 0 17px 0;
+    }
+    #main .signin .signinbutton{
+        margin: 5px 0;
+    }
+    #main .signin .signinbutton button{
+        width: 230px;
+        height: 28px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: #fecf54;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    #main .signin .signinfooter{
+        font-size: 11px;
+    }
+    #main .signin .signinfooter a{
+        text-decoration: none;
+        color: #007185;
+    }
+    #main .signin .signinfooter a:hover{
+        color: #c7511f;
+    }
+}
+#footer{
+    width: 100%;
+    background-color: #0d141e;
+}
+@media screen and (max-width:800px){
+    .desktop{
+        display: none;
+    }
+    #footer .topfooter{
+        width: 100%;
+        height: 3rem;
+        background-color: #364759;
+        text-align: center;
+        padding: 2rem 0 0 0;
+    }
+    #footer .topfooter a{
+        color: #ffffff;
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-decoration: none;
+    
+    }
+    #footer .mainfooter{
+        width: 100%;
+        background-color: #232f3e;
+        padding: 0 2rem 2.5rem 2rem;
+        box-sizing: border-box;
+    }
+    #footer .mainfooter .footerlists{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        
+    }
+    #footer .mainfooter .footerlists li{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 2.5rem 0 0 0;
+    }
+    #footer .mainfooter .footerlists .leftlist{
+        width: 50%;
+        margin: 0;
+    }
+    #footer .mainfooter .footerlists .rightlist{
+        width: 50%;
+        margin: 0;
+    }
+    #footer .mainfooter .footerlists a{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 16px;
+    }
+    #footer .bottomfooter{
+        width: 100%;
+    }
+    #footer .bottomfooter .footericoncontainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 2.5rem 0 1.26rem 0;
+        justify-content: center;
+        color: #ccc;
+        font-size: 1.4rem;
+    }
+    #footer .bottomfooter .footericoncontainer .global{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 1.4rem 1.26rem;
+    }
+    #footer .bottomfooter .footericoncontainer .dollar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 1.4rem 1.26rem;
+    }
+    #footer .bottomfooter .footericoncontainer .country{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 1.4rem 1.26rem;
+    }
+    #footer .bottomfooter .footericoncontainer .country img{
+        width: 18px;
+        height: 12px;
+        margin: 0 7px;
+    }
+    #footer .bottomfooter .footersignin{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 2.5rem 0;
+        font-size: 1.5rem;
+        line-height: 20px;
+        color: #ffffff;
+
+    }
+    #footer .bottomfooter .footersignin a{
+        color: #ffffff;
+        text-decoration: none;
+        padding-left: 5px;
+    }
+    #footer .bottomfooter .bottomfooterlist{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+        margin: 0 0 1rem 0;
+    }
+    #footer .bottomfooter .bottomfooterlist li{
+        font-size: 1.1rem;
+        margin: 0;
+        padding: 0;
+    }
+    #footer .bottomfooter .bottomfooterlist li a{
+        color: #ccc;
+        text-decoration: none;
+        padding: 0 0.8rem;
+    }
+    #footer .bottomfooter .bottomfooterlist li a img{
+        width: 29px;
+        height: 14px;
+    }
+    #footer .bottomfooter .copyright{
+        width: 100%;
+        text-align: center;
+        color: #ccc;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+        margin: 0 0 1rem 0;
+        padding: 0 0 3.5rem 0;
+    }
+}
+@media screen and (min-width:801px){
+    .mobile{
+        display: none;
+    }
+    #footer .topfooter{
+        width: 100%;
+        background-color: #37475A;
+        text-align: center;
+        padding: 15px 0;
+    }
+    #footer .topfooter span a{
+        color: #ffffff;
+        font-size: 13px;
+        line-height: 19px;
+        text-decoration: none;
+    }
+    #footer .mainfooter{
+        width: 100%;
+        background-color: #232f3e;
+        padding: 40px 0;
+    }
+    #footer .mainfooter .mainfooterlist{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+        max-width: 1000px;
+        box-sizing: border-box;
+    }
+    #footer .mainfooter .mainfooterlist ul{
+        list-style: none;
+        padding: 0 1rem;
+    }
+    #footer .mainfooter .mainfooterlist ul .listheader{
+        color: #ffffff;
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin: 6px 0 14px 0;
+        text-wrap: nowrap;
+    }
+    #footer .mainfooter .mainfooterlist ul li{
+        margin: 0 0 1rem 0;
+    }
+    #footer .mainfooter .mainfooterlist ul li a{
+        font-size: 14px;
+        line-height: 120%;
+        color: #ddd;
+        text-decoration: none;
+    }
+    #footer .mainfooter .mainfooterlist ul li a:hover{
+        text-decoration: underline;
+    }
+    #footer .mainfooter .mainfooterlist .gap{
+        width: 10%;
+        padding: 0 1rem;
+    }
+    #footer .mainfooter .footericoncontainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding:0;
+        margin: 10px auto;
+        max-width: 1000px;
+        color: #ccc;
+        font-size: 1.3rem;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+    #footer .mainfooter .footericoncontainer .amazonlogo{
+        margin: 3rem 0 1.5rem 0;
+    }
+    #footer .mainfooter .footericoncontainer .amazonlogo a{
+        padding: 0.72rem;
+    }
+    #footer .mainfooter .footericoncontainer .amazonlogo a img{
+        width: 76px;
+        height: 23px;
+    }
+    #footer .mainfooter .footericoncontainer .othericons{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 0.72rem;
+        
+    }
+    #footer .mainfooter .footericoncontainer .othericons .global{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 0.6rem 1.8rem 0 0.8rem;
+        border: 1px solid #848688;
+        border-radius: 3px;
+        margin: 1.8rem 0.4rem 0 7rem;
+    }
+    #footer .mainfooter .footericoncontainer .othericons .dollar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 0.6rem 1.8rem 0.6rem 0.8rem;
+        border: 1px solid #848688;
+        border-radius: 3px;
+        margin: 1.8rem 0.4rem 0 0;
+    }
+    #footer .mainfooter .footericoncontainer .othericons .country{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 0.6rem 1.8rem 0.6rem 0.8rem;
+        border: 1px solid #848688;
+        border-radius: 3px;
+        margin: 1.8rem 0.4rem 0 0;
+    }
+    #footer .mainfooter .footericoncontainer .othericons .country img{
+        width: 18px;
+        height: 12px;
+        margin: 0 7px;
+    }
+    #footer .bottomfooter{
+        width: 100%;
+        background-color: #131A22;
+        text-align: center;
+    }
+    #footer .bottomfooter .bottomfootertable{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 30px 0;
+        margin:0 auto;
+        max-width: 1000px;
+        justify-content: center;
+    }
+    #footer .bottomfooter .bottomfootertable .bottomfootercolumnlist{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #footer .bottomfooter .bottomfootertable .bottomfootercolumnlist .bottomfooterlist{
+        list-style: none;
+        pad: 0 0.9rem;
+        text-align: left;
+    }
+    #footer .bottomfooter .bottomfootertable .bottomfootercolumnlist .bottomfooterlist .bottomfooterrowlistheader{
+        color: #ddd;
+        font-size: 1.2rem;
+        line-height: 115%;
+        text-wrap: nowrap;
+    }
+    #footer .bottomfooter .bottomfootertable .bottomfootercolumnlist .bottomfooterlist .bottomfooterrowlistbody{
+        color: #999;
+        font-size: 1.2rem;
+        line-height: 110%;
+        text-wrap: nowrap;
+    }
+    #footer .bottomfooter .bottomfootertable .bottomfootercolumnlist .bottomfooterlist:hover{
+        text-decoration: underline;
+    }
+    #footer .bottomfooter div{
+        padding: 1rem 0 3rem 0;
+        margin: 0;
+    }
+    #footer .bottomfooter div .bottomfooteragreements{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+        margin: 0 0 1rem 0;
+    }
+    #footer .bottomfooter div .bottomfooteragreements li{
+        margin: 0;
+        padding: 0;
+    }
+    #footer .bottomfooter div .bottomfooteragreements li a{
+        font-size: 1.2rem;
+        color: #ddd;
+        text-decoration: none;
+        padding: 0 0.8rem;
+    }
+    #footer .bottomfooter div .bottomfooteragreements li a:hover{
+        text-decoration: underline;
+    }
+    #footer .bottomfooter div .bottomfooteragreements li a img{
+        width: 29px;
+        height: 14px;
+    }
+    #footer .bottomfooter div .copyright{
+        width: 100%;
+        text-align: center;
+        color: #ddd;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        margin: 0 0 1rem 0;
+        padding: 0 0 3.5rem 0;
+    }
+}
